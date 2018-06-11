@@ -1,0 +1,23 @@
+{
+  "name": "dietcss",
+  "version": "0.1.0",
+  "description": "reduce unused rules from css",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/mocha --require intelli-espower-loader"
+  },
+  "author": "Yoshiyuki Kato",
+  "license": "MIT",
+  "dependencies": {
+    "clean-css": "^4.1.11",
+    "colors": "^1.3.0",
+    "css": "^2.2.3",
+    "fs-extra": "^6.0.1",
+    "jsdom": "^11.11.0"
+  },
+  "devDependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^5.2.0",
+    "power-assert": "^1.5.0"
+  }
+}
