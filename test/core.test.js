@@ -2,15 +2,17 @@ const assert = require("power-assert");
 const fs = require("fs");
 const path = require("path");
 const {dietCssCode} = require("../lib/core");
+const Options = require("../lib/options");
 
 //given
 const cssCode = fs.readFileSync(path.resolve(__dirname, "./fixture/css/main.css")).toString();
-const viewCode =fs.readFileSync(path.resolve(__dirname, "./fixture/view/index.html")).toString();
+const viewCodes = [fs.readFileSync(path.resolve(__dirname, "./fixture/view/index.html")).toString()];
+const options = new Options();
 
 describe("core", () => {
   describe("reduce unused css code", () => {
     //when
-    const resultCss = dietCssCode(cssCode, viewCode);
+    const resultCss = dietCssCode(cssCode, viewCodes, options);
     //then
     it("remains rules of existing selectors in a view", () => {
       assert(!!resultCss.match("\#hoge") && !!resultCss.match("\.piyo"));
