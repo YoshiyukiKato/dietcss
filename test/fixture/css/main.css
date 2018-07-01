@@ -1,5 +1,16 @@
+@keyframes foo{
+  0% {width: 50px; height: 50px; background-color: aqua;}
+  100% {width: 200px; height: 50px; background-color: blue;}
+}
+
+@keyframes bar{
+  0% {width: 50px; height: 50px; background-color: aqua;}
+  100% {width: 200px; height: 50px; background-color: blue;}
+}
+
 #hoge{
   color: "red";
+  animation: foo;
 }
 
 .piyo{
