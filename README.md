@@ -1,5 +1,7 @@
 # dietcss
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/YoshiyukiKato/dietcss.svg)](https://greenkeeper.io/)
+
 A simple tool to reduce weight of fatty CSS by cutting off unused rules in a page.
 
 ```js
