@@ -1,6 +1,6 @@
 {
   "name": "dietcss",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "reduce unused rules from css",
   "main": "index.js",
   "scripts": {
