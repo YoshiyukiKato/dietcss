@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+'use strict';
+
 const path = require("path");
 const {version} = require("../package.json");
 const program = require("commander");

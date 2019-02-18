@@ -1,13 +1,13 @@
 {
   "name": "dietcss",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "reduce unused rules from css",
   "main": "index.js",
   "scripts": {
     "test": "$(npm bin)/mocha --require intelli-espower-loader"
   },
   "bin": {
-    "dietcss": "bin/dietcss.js"
+    "dietcss": "./bin/dietcss.js"
   },
   "author": "Yoshiyuki Kato",
   "license": "MIT",
