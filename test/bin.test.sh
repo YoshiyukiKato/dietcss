@@ -1,0 +1,1 @@
+node ../bin/dietcss.js ./fixture/config.js
